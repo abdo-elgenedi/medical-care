@@ -1,78 +1,101 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Medical Care Application (Like Veseta Application)
+## Application Features 
+### Website
+1. #### Searching
+    1. Searching About Doctors By Location.
+    2. Filter The Doctors By Specialists.
+    3. The Doctor Card Contains.
+       * Logo , Description , Specialist , Reviews , Reviews Count , Location , Feedback Count , Price.
+       * View Profile , Add To Favourite And Book Appointment Button.
+       * Add To Favourite Appeare Only When User Logged In.
+2. #### View Profile Page
+    1. Contains Logo , Description , Specialist , Reviews , Reviews Count , Location , Feedback Count , Price.
+    2. Contains Each User Review And Feedback About This Doctor.
+    3. Contains Doctor's Business Hours   
+        1. Contain Day Name.
+        2. Working Hours For Each Day.
+        3. Status Of The Day At This Time (Available Or Not).
+        4. Here You Can Write Your Review But When You Loggend In As User.
+  3. #### Book Appointement Page 
+     1. First You Must Be Logied In To Visit Book Appointement Page And Choose The Appointement
+     2. You Will Find Calender For 14 Days Only
+        1. Each Day Card Contains Day Name , Date And Working Hours At This Day.
+        2. If The Day Is Available For This Doctor You Will Find Book Button.
+        3. By Click Book Dialog Will Appear To Confirm The Appointment With You.
+        4. Press Book From The Dialog To Receive Booking Success Message.
+        5. **Note You Can't Book Appointments For The Same Doctor 2 Times At The Same Day.**
+  4. #### User Dashboard Page
+     1. Uppcoming Appointments
+        1. Here You Find The Upcoming Appointments Contains.
+            * Doctor's Logo , Name And Specialist.
+            * Appointment Day , Date , Time , Amount , Status (Confirmed Or Cancelled).
+     2. Past Appointments
+        1. Here You Find The Past Appointments Contains.
+            * Doctor's Logo , Name And Specialist.
+            * Appointment Day , Date , Amount , Status (Confirmed Or Cancelled).
+5. #### User Favourites Page
+     1. Uppcoming Appointments
+        1. Find The Doctors Which Put To Favourites.
+            * Card Contains Doctor's Name , Logo , Specialist , Reviews , Location And Price .
+            * Card Contains Book And View Profile Buttons.
+ 5. #### User Profile Settings And Chnage Password Page.
+  
+### Doctor Dashboard
+  1. #### Home Page (Statisticals)
+     * Count Of Patients , Today Appointements And PAst Appointments.
+     * Can Manage Upcoming , Today , Past Appointments
+  2. #### My Patients Page (Contains Patients Who Make Appointment With This Doctor At Any Time)
+     * Patient Card Contains Image , Name , Location , Mobile , Age And Blood Group.
+     * By Click Patient Name Doctor Will Be Redirected To The Patient Profile.
+  3. #### Schedule Timming Page
+     * All Week Days.
+     * Each Day Contains Time , Capacity Of The Day And Day Status.
+     * If The Day Contains Data Doctor Can Edit It At Any Time.
+     * If The Day Didn't Caontains Any Data Doctor Can Add New Data For This Day.
+  4. #### Reviews Page
+     1. Can See All Patients Reviews.
+     2. Review Card Contains Patient's Name , Rate , Comment And Review Time.
+     3. By Click Patient Name Doctor Will Be Redirected To The Patient Profile.
+  5. #### Previous Orders Page 
+     * Can See Order Details.
+  6. #### Profile And Change Password Page 
+     * Can Change His Info And Status (Opened Closed). 
+### Admin Dashboard
+  1. #### Home Page (Statisticals)
+     * Count Of All Doctors , All Patients , Appointments , Previous Orders And Revenue.
+     * List Some Of Most Rated Doctors Contains Doctor's Image , Name , Speciality , Revenue And Rates.
+     * List Some Of Most Reserve Patients Contains Patient's Image , Name , Phone , Appointments And Status.
+  2. #### Appointments Page
+     * List Of All Appointments With Serach.
+     * Contains Doctor's Image , Name And Specialist.
+     * Contains Patient's Image , Name.
+     * Coantains Appointment's Date , Time , Status And Price.
+     * Admin Can Edit Appointment Status At Any Time.  
+  2. #### Regions Page
+     * Add , Edit And Delete Regions Which Application Available At.  
+  3. #### Specialties Page
+     * Add , Edit And Delete Specialties Which Doctors Can Choose From.  
+  4. #### Doctors Page
+     * List Of All Doctors With Serach.
+     * Contains Doctor's Image , Name , Member Since , Total Revenue , Status And Specialist.
+     * Admin Can Block And Unblock Doctor At Any Time.
+     * By Click Doctor Name Admin Will Watch Doctor Profile.
+  5. #### Patients Page
+     * List Of All Patients With Serach.
+     * Contains Patient's ID , Image , Name , Age , Address , Mobile , Last Appointments And Status.
+     * Admin Can Block And Unblock Patient At Any Time.
+     * By Click Patient Name Admin Will Watch Patient Profile.
+  6. #### Reviews Page
+     * Contains Doctor's Image And Name.
+     * Contains Patient's Name , And Image Who Review This Doctor.
+     * Containts Review's Rate , Comment , Date And Time.
+     * Admin Can Delete Any Review At Any Time.
+  7. #### Profile And Change Password Page
+  
+  ### Notes:-
+  **In Main Project Folder There Is _medicalcare.sql_ Database Backup.**\
+  #### Admin Credentials:-
+  **_Username:abdoelgenedi@gmail.com._**\
+  **_Password:12345678._**
+  
+   
