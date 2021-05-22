@@ -1,0 +1,6 @@
+@include('doctor.includes.head')
+@include('doctor.includes.header')
+@yield('header')
+@include('doctor.includes.navbar')
+@yield('content')
+@include('doctor.includes.footer')
