@@ -93,6 +93,7 @@
   7. #### Profile And Change Password Page
   
   ### Notes:-
+  **For Visiting Admin _/Admin/Dashboard_ Because Of Admin Folder In Public Will Cause Accessbility Error** 
   **In Main Project Folder There Is _medicalcare.sql_ Database Backup.**\
   #### Admin Credentials:-
   **_Username:abdoelgenedi@gmail.com._**\
